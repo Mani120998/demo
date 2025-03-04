@@ -12,5 +12,5 @@ def studententry(request):
     section = request.data['section']
     grade = request.data['grade']
     student.objects.create(studentname=name,standard=standard,section=section,grade=grade)
-    return Response('success')
+    return Response('Uploaded Successfully')
 
